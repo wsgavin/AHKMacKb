@@ -35,9 +35,6 @@ Return
 ; Paste
 #v::Send ^v
 
-; Paste as plain text
-#+v::Send ^+v
-
 ; Cut
 #x::Send ^x
 
@@ -74,6 +71,9 @@ Lwin & Tab::AltTab
 
 ; Find Previous
 +#g::Send +^g
+
+; Paste as plain text
+#+v::Send ^+v
 
 #IfWinActive
 

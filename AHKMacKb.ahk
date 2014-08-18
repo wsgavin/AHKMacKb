@@ -17,13 +17,8 @@ SendMode Input
 
 
 ; Reverse Scroll
-WheelUp::
-Send {WheelDown}
-Return
-
-WheelDown::
-Send {WheelUp}
-Return
+WheelUp::Send {WheelDown}
+WheelDown::Send {WheelUp}
 
 
 ; Media - no longer needed w/Boot Camp drivers

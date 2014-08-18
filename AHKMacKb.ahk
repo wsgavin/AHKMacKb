@@ -90,9 +90,19 @@ Lwin & Tab::AltTab
 ; Microsoft Excel
 #IfWinActive, ahk_class XLMAIN
 
-#Up::Send ^{Up}
+; Save as
+#+s::F12
 
+#Up::Send ^{Up}
 #Down::Send ^{Down}
+
+#IfWinActive
+
+; Microsoft Word
+#IfWinActive, ahk_class OpusApp
+
+; Save as
+#+s::F12
 
 #IfWinActive
 
@@ -106,5 +116,4 @@ return
 
 
 
-; Save as
-#+s::F12
+

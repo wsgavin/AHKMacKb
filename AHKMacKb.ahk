@@ -87,7 +87,25 @@ Lwin & Tab::AltTab
 
 
 
+; Microsoft Excel
+#IfWinActive, ahk_class XLMAIN
+
+#Up::Send ^{Up}
+
+#Down::Send ^{Down}
+
+#IfWinActive
+
+
+
 ::dff::
 FormatTime, CurrentDateTime,, yyyy-MM-dd
 SendInput %CurrentDateTime%
 return
+
+
+
+
+; Save as
+
+#+s::F12

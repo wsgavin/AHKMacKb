@@ -14,8 +14,6 @@
 ;     - Volume Contols
 ;     - Fn key
 
-
-
 #NoEnv
 #MaxHotkeysPerInterval 1000
 #SingleInstance force
@@ -23,18 +21,9 @@
 
 SendMode Input
 
-
 ; Reverse Scroll
 WheelUp::Send {WheelDown}
 WheelDown::Send {WheelUp}
-
-
-; Media - no longer needed w/Boot Camp drivers
-;F10::SendInput {Volume_Mute}
-;F11::SendInput {Volume_Down}
-;F12::SendInput {Volume_Up}
-
-
 
 ; Save
 #s::Send ^s

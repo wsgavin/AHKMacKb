@@ -5,6 +5,14 @@
 ;     - Instructions on Boot Camp keyboard drivers
 ;     - Rethink on modules as this is more than just Mac keyboard specific
 ;
+;
+; Below is a AutoHotKey script I created to specifically support a wireless Mac keyboard. There are other
+; automations defined but I am included them to keep it all in one script.
+;
+; Features That Worked After Boot Camp Keyboard Drivers Installed
+;     - Media Controls
+;     - Volume Contols
+;     - Fn key
 
 
 

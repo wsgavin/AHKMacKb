@@ -1,3 +1,13 @@
+; Warren Gavin
+; warren@dubelyoo.com
+;
+; TODO:
+;     - Instructions on Boot Camp keyboard drivers
+;     - Rethink on modules as this is more than just Mac keyboard specific
+;
+
+
+
 #NoEnv
 #MaxHotkeysPerInterval 1000
 #SingleInstance force

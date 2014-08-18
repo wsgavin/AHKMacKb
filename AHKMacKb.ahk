@@ -65,6 +65,12 @@ Return
 ; Alt Tab flip flop
 Lwin & Tab::AltTab
 
+; Bold
+#b::Send ^b
+
+; Italics
+#i::Send ^i
+
 
 ; Google Chrome
 #IfWinActive, ahk_class Chrome_WidgetWin_1

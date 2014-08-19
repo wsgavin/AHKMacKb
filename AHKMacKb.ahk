@@ -116,6 +116,9 @@ Lwin & Tab::AltTab
   ClipTemp := Clipboard
   Send ^c
   ClipWait
+  StringReplace, Clipboard, Clipboard, %A_Tab%, %A_SPACE%, ALL ; replace tabs w/spaces
+  StringReplace, Clipboard, Clipboard, 'r'n'r'n, %A_SPACE%, ALL ; remove duplicate CR+LF's
+  StringReplace, Clipboard, Clipboard, 'r'n, %A_SPACE%, ALL ; replace CR+LF w/spaces
   Run, "C:\Program Files (x86)\Google\Chrome\Application\chrome.exe" "http://www.google.com/search?q=%Clipboard%"
   Clipboard := ClipTemp
   Return
@@ -158,11 +161,14 @@ MoveWindow(width, height)
 
 ; Hotsrings
 
+; Date format for filenames.
 ::dff::
 FormatTime, CurrentDateTime,, yyyy-MM-dd
 SendInput %CurrentDateTime%
 Return
 
+; Personal email address
 ::w@::warren@dubelyoo.com
 
+; Used when commenting in emails, etc.
 ::wgc::[WG] [/WG]{Left 6}

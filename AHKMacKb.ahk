@@ -21,8 +21,6 @@
 
 SendMode Input
 
-;EnvGet, programFiles, ProgramFiles
-
 ; Reverse Scroll
 WheelUp::Send {WheelDown}
 WheelDown::Send {WheelUp}
@@ -167,4 +165,4 @@ Return
 
 ::w@::warren@dubelyoo.com
 
-::wgc::[Warren Gavin]
+::wgc::[WG] [/WG]{Left 6}

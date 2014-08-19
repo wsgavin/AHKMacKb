@@ -108,12 +108,21 @@ Lwin & Tab::AltTab
 
 
 
+; Opens Chrome with a Google search on the selected text.
+!#g::
+  ClipTemp := Clipboard
+  Send ^c
+  ClipWait
+  Run, "C:\Program Files (x86)\Google\Chrome\Application\chrome.exe" "http://www.google.com/search?q=%Clipboard%"
+  Clipboard := ClipTemp
+  Return
+
+
+
+
+; Hostrings
+
 ::dff::
 FormatTime, CurrentDateTime,, yyyy-MM-dd
 SendInput %CurrentDateTime%
 return
-
-
-
-
-
